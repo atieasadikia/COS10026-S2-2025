@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Charset Declaration -->
+    <meta charset="UTF-8">
+    <!-- Viewport Settings for Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Description for SEO -->
+    <meta name="description" content="This page is about Doki the cat, who is a silver Scottish fold">
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="cat, Scottish fold, silver, feline">
+    <!-- Author Information -->
+    <meta name="author" content="AT">
+
+    <!-- Page Title (tab bar text) -->
+    <title>A Day in the Life of Doki</title>
+</head>
+<body>
+    <header>
+        <!-- Main Heading (Level 1) - link within the page-->
+        <h1>A Day in the Life of <a href="#doki_pic">Doki (THE CAT)</a></h1>
+        <p>Welcome to the purrfectly amusing world of feline antics!</p>
+
+        <!-- Primary navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fav_form.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro section -->
+        <section id="introduction">
+            <h2>About This Form</h2>
+            <p>We all have unique tastes, and this form is here to celebrate yours! Share your favourite things with us. Ready? Let’s get started!</p>
+        </section>
+
+        <!-- Form section -->
+        <section id="form">
+            <!-- Fixed small grammar issue in heading text -->
+            <h2>Your Favourite Things (Because everyone has unique tastes)</h2>
+
+            <!-- Form element posts to Swinburne test handler -->
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                <!-- Text input for name -->
+                <label for="name">Your Legendary Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your mighty name (40 characters max)"
+                    maxlength="40"
+                    required>
+                <br>
+
+                <!-- Number input limited to a single digit 0–9 -->
+                <label for="number">Your Favourite Number from 0 to 9:</label>
+                <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    placeholder="e.g., 2"
+                    pattern="\d{1}"
+                    inputmode="numeric"
+                    aria-describedby="number-help">
+                <small id="number-help">(one digit, 0–9)</small>
+                <br>
+
+                <!-- Colour picker -->
+                <label for="colour">Your Favourite Colour:</label>
+                <input type="color" id="colour" name="colour">
+                <br>
+
+                <!-- Checkbox group for pets -->
+                <!-- Wrapped related checkboxes in a fieldset for accessibility and structure -->
+                <fieldset>
+                    <legend>Your Favourite Pets:</legend>
+                    <label for="dog">
+                        <input type="checkbox" id="dog" name="pets[]" value="dog">
+                        Dog
+                    </label>
+                    <br>
+                    <label for="cat">
+                        <input type="checkbox" id="cat" name="pets[]" value="cat">
+                        Cat
+                    </label>
+                    <br>
+                    <label for="dragon">
+                        <input type="checkbox" id="dragon" name="pets[]" value="dragon">
+                        Dragon (Why not?)
+                    </label>
+                </fieldset>
+                <br>
+
+                <!-- Radio button group for tutor choice -->
+                <fieldset>
+                    <legend>Your Favourite Tutor</legend>
+                    <input type="radio" id="tutor_all" name="tutor" value="allTutors">
+                    <label for="tutor_all">Atie, Rahul, Nick, Razeen</label>
+                    <br>
+                    <input type="radio" id="tutor_other" name="tutor" value="others" disabled>
+                    <label for="tutor_other">Someone Else</label>
+                </fieldset>
+                <br>
+
+                <!-- Select drop-down -->
+                <label for="fav_sub">Favourite Subjects</label>
+                <select id="fav_sub" name="fav_sub" required>
+                    <option value="" selected>Please pick one</option>
+                    <option value="COS10026">COS10026</option>
+                    <option value="Web Technology Project">Web Technology Project</option>
+                    <option value="AtieSubject">Atie’s Subject</option>
+                </select>
+                <br>
+
+                <!-- Date picker -->
+                <label for="birthday">Your Birthday (Because everyone loves cake!)</label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+
+                <!-- Range slider -->
+                <label for="dayrating">How&apos;s Your Day Going? (Slide to rate):</label>
+                <input type="range" id="dayrating" name="dayrating" min="1" max="10">
+                <br>
+
+                <!-- Free-text comments -->
+                <label for="comment">Any Comments?</label>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Tell us more about your favourites..."></textarea>
+                <br>
+
+                <!-- Submit and reset buttons -->
+                <input type="submit" value="Submit Your Favourites">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ati. All rights reserved.</p>
+    </footer>
+</body>
+</html>
