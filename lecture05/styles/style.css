@@ -1,0 +1,308 @@
+/* General Body Styles */
+body {
+    margin: 0% 5%;
+    padding: 0;
+    line-height: 1.6;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #022342; /* Dark blue text */
+    /* Gradient Background */
+    background: linear-gradient(to bottom, #f1abbb, #fff5f7); /* Light pink gradient */
+    
+}
+
+
+/* Header Styling */
+#header {
+    padding: 20px 10px;
+    background-color: #d64c6c; /* Dark pink background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* Evenly space items */
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; /* Center the header */
+    
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Round logo */
+    object-fit: cover;
+    border: 2px solid #f68c9f; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* Adjust space between the logo and title */
+}
+
+nav {
+    background-color: #f59cac; /* Lighter pink for the nav */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+#header nav ul li {
+    margin: 0 15px;
+    padding: 10px;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #022342;
+}
+#header nav ul li:hover {
+    background-color: #022342;
+}
+#header nav ul li a:hover {
+    color: #f4b600; /* Yellow text on hover */
+}
+h1{
+    text-align: center;
+    font-size:large;
+}
+/* Main Content */
+#main {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+#routine{
+    display: flex;
+    justify-content: center;
+}
+
+#routine div{
+    border: #f68c9f solid 1px;
+    padding: 2%;
+    border-radius: 8px;
+    font-size: small;
+    min-width: 30%;
+}
+#routine h2{
+    text-align: center;
+    color: #d64c6c;
+}
+#morning:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.5);
+}
+#morning{
+    background-image: url(images/doki_morning.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.5;
+}
+#midday{
+    background-image: url(images/doki-midday.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.5; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+    
+}
+#midday:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+#evening{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(images/doki_evening.jpg);
+    opacity: 0.5; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
+}
+#evening:hover{
+    opacity:1;
+    background: rgba(255, 255, 255, 0.5);
+}
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+#doki img{
+    width: 100%;
+
+}
+
+/* Styling the Figure and Caption */
+figure {
+    margin: 20px auto; /* Center the figure horizontally */
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center align items within the figure */
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    color: #333333; /* Dark grey for captions */
+    border: 1px solid #333333; /* Dark grey border */
+    border-radius: 8px;
+    padding: 10px;
+    width: 50%; /* Set a width for the caption */
+    text-align: center; /* Center text inside the caption */
+    margin-top: 10px; /* Space between image and caption */
+}
+#family { 
+    display: flex; 
+    gap: 16px; 
+    flex-wrap: nowrap; 
+}
+#family > div { flex: 0 0 30.33%; }
+#family img {
+  width: 100%;
+  max-width: none;
+  height: 280px;        /* pick a height you like */
+  object-fit: cover;    /* crops neatly to the same size */
+  border-radius: 8px;
+}
+/* Responsive Image */
+#doki_pic {
+    width: 25%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+th {
+    background-color: #f68c9f; /* Lighter pink for table headers */
+    color: #ffffff; /* White text */
+    text-align: center;
+    
+}
+
+tr:hover {
+    background-color: #fde5e8; /* Light pink on hover */
+}
+
+/* Styling Links */
+a {
+    color: #d75a77; /* Dark pink for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f4b600; /* Yellow for link hover */
+}
+
+/* Doki's friends Page */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .image-grid figure {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: 150px; /* or any fixed height you like */
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .image-grid figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+/* Footer Styling */
+#footer {
+    background-color: #d75a77; /* Dark pink background */
+    color: #ffffff; /* White text */
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#footer nav ul li {
+    margin: 0 15px;
+}
+
+#footer nav ul li a {
+    color: #022342;;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#footer nav ul li a:hover {
+    color: #fff1f3; /* Very light pink on hover */
+}
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    #header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
